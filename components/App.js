@@ -1,11 +1,11 @@
 import React from 'react';
-import GoogleMap from './map/index';
+import GettingStartedExample from './map/index';
 
 class App extends React.Component {
    render() {
       return (
          <div>
-         	<GoogleMap/>
+         	<GettingStartedExample/>
          </div>
       );
    }
