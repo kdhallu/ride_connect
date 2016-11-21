@@ -1,0 +1,24 @@
+{
+  "name": "ride_connect",
+  "version": "1.0.0",
+  "description": "Ride connect ",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdhallu/ride_connect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kdhallu/ride_connect/issues"
+  },
+  "homepage": "https://github.com/kdhallu/ride_connect#readme",
+  "dependencies": {
+    "react": "^15.4.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
