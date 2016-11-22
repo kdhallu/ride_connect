@@ -1,7 +1,10 @@
 import _ from "lodash";
 import React,{Component} from 'React'
 import Helmet from "react-helmet";
-import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
+import { withGoogleMap,
+    GoogleMap,
+    InfoWindow,
+    Marker } from "react-google-maps";
 
 const GoogleMapTemplate = withGoogleMap(props => (
     <GoogleMap
@@ -33,7 +36,6 @@ export default class GoogleMapComponent extends Component {
     };
 
     handleMapLoad = this.handleMapLoad.bind(this);
-    handleMapClick = this.handleMapClick.bind(this);
     handleMarkerRightClick = this.handleMarkerRightClick.bind(this);
 
     handleMapLoad(map) {
@@ -91,7 +93,6 @@ export default class GoogleMapComponent extends Component {
                     <div className="map-element" style={{position: 'inherit'}}/>
                     }
                 onMapLoad={this.handleMapLoad}
-                onMapClick={this.handleMapClick}
                 markers={this.state.markers}
                 onMarkerRightClick={this.handleMarkerRightClick}
             />
